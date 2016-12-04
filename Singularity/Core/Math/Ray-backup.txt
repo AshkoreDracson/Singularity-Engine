@@ -1,0 +1,54 @@
+﻿using System.Drawing;
+using System.Collections.Generic;
+namespace AshEngine.Core
+{
+    public class Ray
+    {
+        private Graphics _g = Game.Window.Drawing;
+        
+        public struct RayInfo
+        {
+            public Vector2 position;
+            public Vector2 direction;
+        }
+        public struct HitInfo
+        {
+            public Vector2 origin;
+            public Vector2 direction;
+            public Vector2 point;
+            public BoxCollider2D collider;
+        }
+        public Vector2 origin = Vector2.zero;
+        public Vector2 direction = Vector2.zero;
+        public Ray(Vector2 position, Vector2 direction)
+        {
+            direction.Normalize();
+            this.direction = direction;
+            this.origin = position;
+        }
+
+        public HitInfo[] Cast(float distance, bool debug = false)
+        {
+            List<HitInfo> hitInfos = new List<HitInfo>();
+            if (debug)
+            {
+                GameForm.raysToDraw.Add(new RayInfo() { position = origin, direction = direction });
+            }
+            BoxCollider2D[] colliders = GameObject.GetAllComponentsByType<BoxCollider2D>();
+            foreach (BoxCollider2D collider in colliders)
+            {
+                Vector2 pos = collider.gameObject.transform.position;
+                Vector2 point = this.origin + this.direction * distance;
+                if (point.x <= pos.x + collider.size.x / 2 + collider.center.x && point.x >= pos.x - collider.size.x / 2 + collider.center.x && point.y <= pos.y + collider.size.y / 2 + collider.center.y && point.y >= pos.y - collider.size.y / 2 + collider.center.y)
+                {
+                    
+                    hitInfos.Add(new HitInfo() { collider = collider, direction = direction, origin = origin, point = point });
+                }
+            }
+            if (hitInfos.Count > 0)
+                return hitInfos.ToArray();
+            else
+                return null;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+﻿sing System.Drawing;
+using Singularity;
+using Singularity.Core;
+
+namespace Singularity.Scripts
+{
+    class TileTest : ScriptBehaviour
+    {
+        public override void Start()
+        {
+            TileSet x = new TileSet(Image.FromFile(@"C:\Users\Adrien\tileset.png"), 16);
+            GameObject go = new GameObject("lol");
+            SpriteRenderer sr = go.AddComponent<SpriteRenderer>();
+            sr.texture = x.tileList[0];
+        }
+    }
+}

@@ -1,0 +1,14 @@
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\obj\Debug\Singularity Sample Game.csprojResolveAssemblyReference.cache
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\bin\Debug\Singularity Sample Game.exe.config
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\bin\Debug\Singularity Sample Game.exe
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\bin\Debug\Singularity Sample Game.pdb
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\bin\Debug\Singularity.pdb
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\obj\Debug\Singularity Sample Game.exe
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\obj\Debug\Singularity Sample Game.pdb
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\bin\Debug\Singularity Sample Game.exe.config
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\obj\Debug\Singularity Sample Game.exe
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\obj\Debug\Singularity Sample Game.pdb
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\bin\Debug\Singularity Sample Game.exe
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\bin\Debug\Singularity Sample Game.pdb
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\bin\Debug\Singularity.pdb
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity Sample Game\obj\Debug\Singularity Sample Game.csprojResolveAssemblyReference.cache

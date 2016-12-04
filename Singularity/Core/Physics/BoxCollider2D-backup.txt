@@ -1,0 +1,90 @@
+﻿using System.Drawing;
+using System.Collections.Generic;
+namespace Singularity.Core
+{
+    public class BoxCollider2D : Component
+    {
+        public Vector2 center = Vector2.zero;
+        public Vector2 size = Vector2.one;
+        public bool kinematic { get; set; }
+
+        public override void Start()
+        {
+            
+        }
+
+        public override void Update()
+        {
+            IsColliding();
+        }
+
+        private bool IsColliding()
+        {
+            BoxCollider2D[] colliders = GameObject.GetAllComponentsByType<BoxCollider2D>();
+            foreach (BoxCollider2D collider in colliders)
+            {
+                if (collider != this)
+                {
+                    float left = gameObject.transform.position.x + this.center.x + -this.size.x/2;
+                    float right = gameObject.transform.position.x + this.center.x + this.size.x/2;
+                    float down = gameObject.transform.position.y + this.center.y + this.size.y/2;
+                    float up = gameObject.transform.position.y + this.center.y + -this.size.y/2;
+                    float otherLeft = collider.gameObject.transform.position.x + collider.center.x + -collider.size.x/2;
+                    float otherRight = collider.gameObject.transform.position.x + collider.center.x + collider.size.x/2;
+                    float otherDown = collider.gameObject.transform.position.y + collider.center.y + collider.size.y/2;
+                    float otherUp = collider.gameObject.transform.position.y + collider.center.y + -collider.size.y/2;
+                    bool rightColliding = (right > otherLeft);
+                    bool leftColliding = (left < otherRight);
+                    bool downColliding = (down > otherUp);
+                    bool upColliding = (up < otherDown);
+                    if (rightColliding && leftColliding && downColliding && upColliding)
+                    {
+                        if (!kinematic)
+                        {
+                            bool left_2 = (gameObject.transform.position.x <= collider.gameObject.transform.position.x);
+                            bool up_2 = (gameObject.transform.position.y <= collider.gameObject.transform.position.y);
+                            bool right_2 = (gameObject.transform.position.x >= collider.gameObject.transform.position.x);
+                            bool down_2 = (gameObject.transform.position.y >= collider.gameObject.transform.position.y);
+                            bool rightDown = (gameObject.transform.position.x <= collider.gameObject.transform.position.x && gameObject.transform.position.y <= collider.gameObject.transform.position.y);
+                            float posx = gameObject.transform.position.x;
+                            float posy = gameObject.transform.position.y;
+                            if (rightDown)
+                            {
+                                if (!right_2)
+                                {
+                                    posx = Mathf.Spreader(right, otherLeft, otherRight);
+                                    posx -= this.size.x / 2;
+                                    System.Diagnostics.Debug.WriteLine(posx);
+                                }
+                                if (!down_2)
+                                {
+                                    posy = Mathf.Spreader(down, otherUp, otherDown);
+                                    posy -= this.size.y / 2;
+                                    System.Diagnostics.Debug.WriteLine(posy);
+                                }
+                            }
+                            else
+                            {
+                                if (!left_2)
+                                {
+                                    posx = Mathf.Spreader(left, otherLeft, otherRight);
+                                    posx += this.size.x / 2;
+                                    System.Diagnostics.Debug.WriteLine(posx);
+                                }
+                                if (!up_2)
+                                {
+                                    posy = Mathf.Spreader(up, otherUp, otherDown);
+                                    posy += this.size.y / 2;
+                                    System.Diagnostics.Debug.WriteLine(posy);
+                                }
+                            }
+                            gameObject.transform.position = new Vector2(posx, posy);
+                        }
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+    }
+}

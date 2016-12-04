@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{902B8BD1-8D2B-4199-8DD1-47207F92D4FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Singularity</RootNamespace>
+    <AssemblyName>Singularity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Assets\Assets.cs" />
+    <Compile Include="Core\Camera.cs" />
+    <Compile Include="Core\Debug\Debugger.cs" />
+    <Compile Include="Core\Assets\TileSet.cs" />
+    <Compile Include="Core\GameObject\TextRenderer.cs" />
+    <Compile Include="Core\Physics\BodyCircle.cs" />
+    <Compile Include="Core\Physics\BodyBox.cs" />
+    <Compile Include="Core\Physics\BoxCollider2D.cs" />
+    <Compile Include="Core\Physics\Collider.cs" />
+    <Compile Include="Core\Physics\Physics.cs" />
+    <Compile Include="Core\Ray.cs" />
+    <None Include="Scripts\TestDispose.csBACK" />
+    <None Include="Scripts\TileTest.csBACK" />
+    <Compile Include="Scripts\Circle.cs" />
+    <Content Include="Core\Physics\BoxCollider2D-backup.txt" />
+    <Compile Include="Core\GameObject\Component.cs" />
+    <Compile Include="Core\GameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\GameCore.cs" />
+    <Compile Include="Core\GameObject\GameObject.cs" />
+    <Compile Include="Core\GameObject\SpriteRenderer.cs" />
+    <Compile Include="Core\GameObject\Transform2D.cs" />
+    <Compile Include="Core\Input.cs" />
+    <Compile Include="Core\Math\Mathf.cs" />
+    <Compile Include="Core\Math\Quaternion.cs" />
+    <Content Include="Core\Math\Ray-backup.txt" />
+    <Compile Include="Core\Physics\CircleCollider2D.cs" />
+    <Compile Include="Core\ScriptBehaviour.cs" />
+    <Compile Include="Core\Time.cs" />
+    <Compile Include="Core\Math\Vector2.cs" />
+    <Compile Include="GameSettings.cs" />
+    <Compile Include="Core\GameObject\Transform.cs" />
+    <Compile Include="Core\Math\Vector3.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defaultTexture.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

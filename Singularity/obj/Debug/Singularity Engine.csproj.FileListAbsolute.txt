@@ -1,0 +1,14 @@
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\obj\Debug\Singularity Engine.csprojResolveAssemblyReference.cache
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\obj\Debug\Singularity.Properties.Resources.resources
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\obj\Debug\Singularity Engine.csproj.GenerateResource.Cache
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\bin\Debug\Singularity.pdb
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\obj\Debug\Singularity.pdb
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\bin\Debug\Singularity.dll
+C:\Users\Adrien\Documents\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\obj\Debug\Singularity.dll
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\bin\Debug\Singularity.dll
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\bin\Debug\Singularity.pdb
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\obj\Debug\Singularity Engine.csprojResolveAssemblyReference.cache
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\obj\Debug\Singularity.Properties.Resources.resources
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\obj\Debug\Singularity Engine.csproj.GenerateResource.Cache
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\obj\Debug\Singularity.dll
+C:\Users\Adrien\Documents\Visual Studio Old\Visual Studio 2013\Team Projects\Singularity Engine\Singularity\Singularity\obj\Debug\Singularity.pdb

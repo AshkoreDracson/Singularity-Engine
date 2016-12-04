@@ -1,0 +1,18 @@
+﻿using System;
+using Singularity;
+using Singularity.Core;
+
+namespace Singularity
+{
+    class TestDispose : ScriptBehaviour
+    {
+        GameObject go = new GameObject("ToDisposeLol");
+        public override void Start()
+        {
+            print(go);
+            go.Dispose();
+            GC.Collect();
+            print(go.name);
+        }
+    }
+}

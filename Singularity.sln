@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singularity Engine", "Singularity\Singularity Engine.csproj", "{902B8BD1-8D2B-4199-8DD1-47207F92D4FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singularity Sample Game", "Singularity Sample Game\Singularity Sample Game.csproj", "{86347FA9-A0EF-46E5-8E84-98C758B2B668}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://yuiasuna.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Singularity\\Singularity\u0020Engine.csproj
+		SccProjectName1 = Singularity
+		SccLocalPath1 = Singularity
+		SccProjectUniqueName2 = Singularity\u0020Sample\u0020Game\\Singularity\u0020Sample\u0020Game.csproj
+		SccProjectName2 = Singularity\u0020Sample\u0020Game
+		SccLocalPath2 = Singularity\u0020Sample\u0020Game
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{902B8BD1-8D2B-4199-8DD1-47207F92D4FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{902B8BD1-8D2B-4199-8DD1-47207F92D4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{902B8BD1-8D2B-4199-8DD1-47207F92D4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{902B8BD1-8D2B-4199-8DD1-47207F92D4FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86347FA9-A0EF-46E5-8E84-98C758B2B668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86347FA9-A0EF-46E5-8E84-98C758B2B668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86347FA9-A0EF-46E5-8E84-98C758B2B668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86347FA9-A0EF-46E5-8E84-98C758B2B668}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
